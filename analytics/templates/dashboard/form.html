@@ -1,0 +1,11 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<div class="row">
+    <form class="form-horizontal" action="{% url 'analytics:user.data.create' %}" method="post">
+       {% crispy form %}
+        <div class="col-6">
+            <button type="submit" class="btn btn-primary btn-sm">Save Changes</button>
+        </div>
+    </form>
+</div>
